@@ -61,3 +61,62 @@ body {
     /* Faz o container ocupar toda a altura da tela */
     border-top: 0.4px solid aliceblue;
 }
+
+.titulo {
+    margin: 0vh 10vh 4vh 21vh;
+    padding: 4vh 10vh 2vh 21vh;
+    color: rgb(44, 129, 55);
+    font-size: 5vh;
+}
+
+.rotulo {
+    margin: 2vh 10vh 4vh 10vh;
+    padding: 2vh 30vh 2vh 30vh;
+    font-size: 3vh;
+}
+
+.menu {
+    margin: 2vh 10vh 2vh 25vh;
+    padding: 2vh 35vh 2vh 35vh;
+    font-size: 2vh;
+}
+
+.menu-item {
+    font-size: 2vh;
+}
+
+.botao {
+    margin: 2vh 20vh 2vh 63vh;
+    padding: 2vh 8vh 2vh 8vh;
+    background-color: #8eb6c5;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #9cc29e;
+    /* Cor de fundo do botão quando o mouse passa sobre ele */
+    color: white;
+    /* Cor do texto quando o mouse passa sobre o botão */
+}
+
+.img {
+    width: 50vh;
+    /* Ajusta a largura da imagem para 50% da altura da janela */
+    height: auto;
+    /* Ajusta a altura automaticamente para manter a proporção da imagem */
+    border: 0.4px solid aliceblue;
+    margin-left: 45vh;
+}
+
+#video_feed {
+    border: none;
+    /* Remove a borda */
+    display: none;
+    /* Esconde o elemento até que seja necessário */
+}
