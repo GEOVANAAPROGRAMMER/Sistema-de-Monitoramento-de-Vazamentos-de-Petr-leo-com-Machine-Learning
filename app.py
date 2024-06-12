@@ -28,3 +28,7 @@ def detect_leakage(frame):
     confidence_score = prediction[0][index]
     return class_name, confidence_score
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
