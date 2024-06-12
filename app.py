@@ -32,3 +32,20 @@ def detect_leakage(frame):
 def index():
     return render_template('index.html')
 
+def gen_frames():
+    cap = cv2.VideoCapture(0)
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+        class_name, confidence_score = detect_leakage(frame)
+        if confidence_score > 0.70:
+            cv2.putText(frame, "VAZAMENTO DE PETROLEO DETECTADO", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        else:
+            cv2.putText(frame, "NAO DETECTADO VAZAMENTO DE PETROLEO", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        ret, buffer = cv2.imencode('.jpg', frame)
+        frame = buffer.tobytes()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+
+
