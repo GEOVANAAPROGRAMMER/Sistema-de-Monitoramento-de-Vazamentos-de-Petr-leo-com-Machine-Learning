@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecção de Vazamento de Petróleo</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <script>
+        function showVideoFeed(event) {
+            event.preventDefault(); // Evita o envio real do formulário
+            var videoElement = document.getElementById('video_feed');
+            videoElement.style.display = 'block'; // Mostra o elemento de vídeo
+            videoElement.src = "{{ url_for('video_feed') }}";
+        }
+    </script>
+</head>
+
+</html>
