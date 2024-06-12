@@ -17,3 +17,36 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.cabecalho {
+    /* Para usar o Flexbox*/
+    display: flex;
+    justify-content: space-between;
+    /* O primeiro item no início do contêiner e o último item no final, e os espaços entre os itens são maximizados */
+    align-items: center;
+    /* Alinha os intens no centro */
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: column;
+    /* Centraliza o texto verticalmente */
+    text-align: flex-start;
+    /* Deixa os itens alinhados no canto (inicio) do conteiner */
+    font-size: 4vh;
+    /* Adicione o tamanho desejado da fonte */
+    padding: 1vh 8vh 2vh;
+    margin: 2vh 15vh 2vh 3vh;
+    color: rgb(25, 73, 31);
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 3vh;
+    /* Espaçamento entre os itens */
+    padding: 2vh 4vh 2vh 3vh;
+    margin: 3vh 0vh 1vh 0;
+    /* Aumenta a margem à direita para afastar do canto direito */
+    align-items: center;
+    color: rgb(25, 73, 31);
+}
