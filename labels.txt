@@ -1,0 +1,2 @@
+0 vazamentos
+1 nao_vazamento
