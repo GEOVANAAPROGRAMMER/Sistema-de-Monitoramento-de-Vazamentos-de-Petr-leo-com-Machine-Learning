@@ -30,7 +30,30 @@
             <a class="cabecalho-menu-item">HISTÓRICO DE VAZAMENTOS</a>
         </nav>
     </header>
+    <div class="formulario">
+        <form onsubmit="showVideoFeed(event);">
+            <h1 class="titulo">Detecção de Vazamento de Petróleo</h1>
+            <label class="rotulo"><b>Escolha qual plataforma Petrobras que deseja monitorar: </b></label>
+            <div class="menu">
+                <select name="linguagem" required="required">
+                    <option value="Bacia de Campos" class="menu-item">Bacia de Campos</option>
+                    <option value="Bacia de Santos" class="menu-item">Bacia de Santos</option>
+                    <option value="Bacia do Espírito Santo" class="menu-item">Bacia do Espírito Santo</option>
+                    <option value="Bacia de Sergipe-Alagoas" class="menu-item">Bacia de Sergipe-Alagoas</option>
+                    <option value="Bacia de Potiguar" class="menu-item">Bacia de Potiguar</option>
+                    <option value="Bacia de Campos dos Goytacazes" class="menu-item">Bacia de Campos dos Goytacazes
+                    </option>
+                    <option value="Bacia do Ceará" class="menu-item">Bacia do Ceará</option>
+                    <option value="Bacia de Barreirinhas" class="menu-item">Bacia de Barreirinhas</option>
+                    <option value="Bacia de Camamu-Almada" class="menu-item">Bacia de Camamu-Almada</option>
+                    <option value="Bacia de Sergipe-Alagoas" class="menu-item">Bacia de Sergipe-Alagoas</option>
+                </select>
+            </div>
+            <button type="submit" class="botao">Monitorar</button>
+            <img id="video_feed" width="640" height="480" class="img">
 
+        </form>
+    </div>
 </body>
 
 </html>
